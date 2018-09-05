@@ -1,0 +1,40 @@
+{
+  "name": "strongbox-aql-autocomplete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "antlr4": "antlr4-tool -visitor -o target/generated-sources/antlr4 src/main/antlr4/AQL.g4",
+    "build": "NODE_ENV=production webpack --progress",
+    "dev": "NODE_ENV=development webpack-dev-server --progress"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "keywords": [],
+  "author": "serge.bespalov@gmail.com",
+  "license": "",
+  "devDependencies": {
+    "antlr4-tool": "^1.0.21",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.22.0",
+    "imports-loader": "^0.6.5",
+    "style-loader": "^0.13.2",
+    "webpack": "^1.13.2",
+    "webpack-combine-loaders": "^2.0.0",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "dependencies": {
+    "antlr4": "^4.7.1",
+    "antlr4-autosuggest": "^0.0.28",
+    "antlr4-c3": "^1.1.8",
+    "antlr4ts": "^0.4.1-alpha.0",
+    "bootstrap": "^4.1.3"
+  }
+}
